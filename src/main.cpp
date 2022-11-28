@@ -32,7 +32,7 @@ const float alpha_ACDC = 0.2; // tunable const in leaky integrator
 
 double HR_filtered = 0;
 float R;
-const float alpha_HR = 0.5; // tunable const in leaky integrator
+const float alpha_HR = 0.05; // tunable const in leaky integrator
 
 void setup()
 {

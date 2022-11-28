@@ -28,7 +28,6 @@ void ReadACDC(double *ACDC_filtered_ptr, double *HR_filtered_ptr, int SENSOR_GPI
         }
         if (PPG_sample_filtered < PPG_min_cur)
         {
-            // min_val =
             PPG_min_cur = PPG_sample_filtered;
             t_min_cur = millis();
         }
