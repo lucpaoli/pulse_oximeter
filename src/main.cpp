@@ -80,7 +80,9 @@ void loop()
   ledcWrite(RED_CHANNEL, RED_DUTY_CYCLE);
   ledcWrite(GREEN_CHANNEL, 0);
   ReadHR(&HR_red, &ACDC_red, SENSOR_GPIO);
-  // R = ACDC_green / ACDC_red;
+  R = ACDC_green / ACDC_red;
+  Serial.print(String(R));
+  Serial.print('\n');
 
   // Serial.print("HR_green:");
   // Serial.print(String(HR_green));

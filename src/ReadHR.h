@@ -9,7 +9,7 @@ void ReadHR(float *HR_ptr, float *ACDC_ptr, int SENSOR_GPIO)
     int threshold = threshold_from_HR(*HR_ptr);
     // PPG readings
     int PPG_sample, PPG_min_pre, PPG_max_pre, PPG_min_cur = INT_MAX, PPG_max_cur = INT_MIN;
-    float PPG_sample_filtered, alpha_PPG = 0.01;
+    float PPG_sample_filtered, alpha_PPG = 0.5;
     // search booleans
     bool last_extrema_was_max = false, last_extrema_was_min = true;
 
